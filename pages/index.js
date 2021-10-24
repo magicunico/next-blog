@@ -8,6 +8,7 @@ import Keypad from '../pcomponents/keypad'
 import Transition from '../pcomponents/transition'
 import TodoFun from '../pcomponents/todoFun'
 import ElizaBot from '../pcomponents/eliza'
+import Gallery from '../pcomponents/gallery'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <ElizaBot />
+          <Gallery />
         </div>
       </main>
 
