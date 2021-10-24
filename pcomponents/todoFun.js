@@ -107,8 +107,8 @@ export default function TodoFun(){
                         <input type="checkbox" checked={true} onChange={e=>changeChecked(e, todo)} />
                         {todo.description}
                         <button onClick={() => removeTodo(todo)}>x</button>
-                    </label>
-                    </div>
+                        </label>
+                         </div>
                         )}
                     </div>
                 </div>
