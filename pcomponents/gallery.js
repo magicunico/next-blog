@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import images from'./images'
+import images from'./Images'
 import React from 'react';
 import createRouteLoader from "next/dist/client/route-loader";
 
@@ -31,22 +31,21 @@ export default function Gallery(){
     
  
     return (
-        <div class="container">
-        <div class="phone">
-            <h1>Photo gallery</h1>
-            <div class="grid">
+        <div class="galleryContainer">
+        <div class="galleryPhone">
+            <h1 class="galleryh1">Photo gallery</h1>
+            <div class="galleryGrid">
             {images.map((image)=>
             
                     <div class="square">
-
-                            <button
+                            <button class="galleryButton"
                                 style={{backgroundColor: image.color}}
                                 onClick={() => load(image)}
                             >{image.id}</button>
 
                         {selected ? 
                         <div>
-                         <img src= {srcImg} onClick={() => setSelected(false)}/>
+                         <img class="galleryImg" src= {srcImg} onClick={() => setSelected(false)}/>
                         </div>
                         :
                         <div></div>

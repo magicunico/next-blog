@@ -32,11 +32,15 @@ export default function Transition(){
         </label>
         </div>
         <div>
-        {/* {#if visible} */}
-            <div class="centered">
-                <div id="image">transitions!</div>
+        {visible? 
+            <div class="transitionCentered">
+                <div class="transitionDiv" id="image">transitions!</div>
             </div>
-        {/* {/if} */}
+            :
+            <div class="transitionCentered">
+                <div class="transitionDiv" id="image"></div>
+            </div>
+        }
         </div>
         </div>
 

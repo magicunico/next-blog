@@ -1,0 +1,236 @@
+/* AlertButton */
+
+.alertButton {
+    height: 4rem;
+    width: 8rem;
+    background-color: #aaa;
+    border-color: #f1c40f;
+    color: #f1c40f;
+    font-size: 1.25rem;
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+}
+.alertButton:hover {
+    background-position: 0;
+    color: #aaa;
+}
+
+/* Eliza */
+.elizaChat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 320px;
+}
+
+.elizaScrollable {
+    flex: 1 1 auto;
+    border-top: 1px solid #eee;
+    margin: 0 0 0.5em 0;
+    overflow-y: auto;
+}
+
+.elizaArticle {
+    margin: 0.5em 0;
+}
+
+.elizaUser {
+    text-align: right;
+}
+
+.elizaSpan {
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+.eliza span {
+    background-color: #eee;
+    border-radius: 1em 1em 1em 0;
+}
+
+.elizaUser span {
+    background-color: #0074D9;
+    color: white;
+    border-radius: 1em 1em 0 1em;
+}
+
+
+/* gallery */
+.galleryContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.galleryPhone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 52vmin;
+    height: 76vmin;
+    border: 2vmin solid #ccc;
+    border-bottom-width: 10vmin;
+    padding: 3vmin;
+    border-radius: 2vmin;
+}
+
+.galleryh1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 5vmin;
+    margin: 0.2em 0 0.5em 0;
+}
+
+.galleryGrid {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+}
+
+.galleryButton {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 5vmin;
+    border: none;
+    margin: 0;
+    will-change: transform;
+}
+
+.galleryPhoto, .galleryImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.galleryPhoto {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex-direction: column;
+    will-change: transform;
+}
+
+.galleryImg {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.galleryCredit {
+    text-align: right;
+    font-size: 2.5vmin;
+    padding: 1em;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    opacity: 0.6;
+    background: rgba(0,0,0,0.4);
+}
+
+.galleryCredit a, .galleryCredit a:visited {
+    color: white;
+}
+
+/* keypad */
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 5em);
+    grid-template-rows: repeat(4, 3em);
+    grid-gap: 0.5em
+}
+
+.keypadButton {
+    margin: 0
+}
+
+/* safeQuestion */
+.safeQuestionInput { display: block; width: 500px; max-width: 100%; }
+
+/* todos fun */
+
+.todofunNew-todo {
+    font-size: 1.4em;
+    width: 100%;
+    margin: 2em 0 1em 0;
+}
+
+.todofunBoard {
+    max-width: 36em;
+    margin: 0 auto;
+}
+
+.todofunLeft, .todofunRight {
+    float: left;
+    width: 50%;
+    padding: 0 1em 0 0;
+    box-sizing: border-box;
+}
+
+.todofunh2 {
+    font-size: 2em;
+    font-weight: 200;
+    user-select: none;
+}
+
+.todofunLabel {
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 1em;
+    line-height: 1;
+    padding: 0.5em;
+    margin: 0 auto 0.5em auto;
+    border-radius: 2px;
+    background-color: #eee;
+    user-select: none;
+}
+
+.todofunInput { margin: 0 }
+
+.todofunRight label {
+    background-color: rgb(180,240,100);
+}
+
+.todofunButton {
+    float: right;
+    height: 1em;
+    box-sizing: border-box;
+    padding: 0 0.5em;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    color: rgb(170,30,30);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.todofunLabel:hover button {
+    opacity: 1;
+}
+
+/* transition */
+
+.transitionCentered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.transitionDiv {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 4em;
+}

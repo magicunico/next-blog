@@ -1,16 +1,29 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Form from '../pcomponents/form'
-import Todo from '../pcomponents/todo'
-import Button from '../pcomponents/button'
-import Keypad from '../pcomponents/keypad'
-import Transition from '../pcomponents/transition'
-import TodoFun from '../pcomponents/todoFun'
-import ElizaBot from '../pcomponents/eliza'
-import Gallery from '../pcomponents/gallery'
+import Form from '../pcomponents/Form'
+import Todo from '../pcomponents/Todo'
+import Button from '../pcomponents/Button'
+import Keypad from '../pcomponents/Keypad'
+import Transition from '../pcomponents/Transition'
+import TodoFun from '../pcomponents/TodoFun'
+import ElizaBot from '../pcomponents/Eliza'
+import Gallery from '../pcomponents/Gallery'
 import Links from '../pcomponents/Links'
-import SafeQuestion from '../pcomponents/safeQuestion'
+import SafeQuestion from '../pcomponents/SafeQuestion'
+import AlertButton from '../pcomponents/AlertButton'
+
+import AlertButtonRaw from '../pcomponentsraw/AlertButtonRaw'
+import ButtonRaw from '../pcomponentsraw/ButtonRaw'
+import ElizaBotRaw from '../pcomponentsraw/ElizaRaw'
+import FormRaw from '../pcomponentsraw/FormRaw'
+import GalleryRaw from '../pcomponentsraw/GalleryRaw'
+import KeypadRaw from '../pcomponentsraw/KeypadRaw'
+import LinksRaw from '../pcomponentsraw/LinksRaw'
+import SafeQuestionRaw from '../pcomponentsraw/SafeQuestionRaw'
+import TodoFunRaw from '../pcomponentsraw/TodoFunRaw'
+import TodoRaw from '../pcomponentsraw/TodoRaw'
+import TransitionRaw from '../pcomponentsraw/TransitionRaw'
 
 export default function Home() {
   return (
@@ -21,17 +34,61 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <div className={styles.grid}>
-          <SafeQuestion />
-        </div>
-      </main>
+      {/* <main className={styles.main}>
+        <div className={styles.grid}><Form /></div>  
+        <div className={styles.grid}><Todo/></div>  
+        <div className={styles.grid}><Button/></div>  
+        <div className={styles.grid}><Keypad/></div>  
+        <div className={styles.grid}><Transition/></div>  
+        <div className={styles.grid}><TodoFun/></div>  
+        <div className={styles.grid}><ElizaBot/></div>  
+        <div className={styles.grid}><Gallery/></div>  
+        <div className={styles.grid}><Links/></div>  
+        <div className={styles.grid}><SafeQuestion/></div>
+        <div className={styles.grid}><AlertButton/></div>
+      </main> */}
 
       {/* <main className={styles.main}>
-        <div className={styles.grid}>
-          <Button />
-        </div>
+        <div className={styles.grid}><FormRaw /></div>  
+        <div className={styles.grid}><TodoRaw/></div>  
+        <div className={styles.grid}><ButtonRaw/></div>  
+        <div className={styles.grid}><KeypadRaw/></div>  
+        <div className={styles.grid}><TransitionRaw/></div>  
+        <div className={styles.grid}><TodoFunRaw/></div>  
+        <div className={styles.grid}><ElizaBotRaw/></div>  
+        <div className={styles.grid}><GalleryRaw/></div>/  
+        <div className={styles.grid}><LinksRaw/></div>  
+        <div className={styles.grid}><SafeQuestionRaw/></div>
+        <div className={styles.grid}><AlertButtonRaw/></div>
       </main> */}
+
+<main className={styles.main}>
+        
+        {/* <div className={styles.grid}><AlertButtonRaw/></div>
+        <div className={styles.grid}><AlertButton/></div> */}
+        {/* <div className={styles.grid}><ElizaBotRaw/></div> 
+        <div className={styles.grid}><ElizaBot/></div>   */}
+         {/* <div className={styles.grid}><FormRaw /></div>  
+        <div className={styles.grid}><Form /></div>   */}
+        {/* <div className={styles.grid}><GalleryRaw/></div>/  */}
+        {/* <div className={styles.grid}><Gallery/></div>/   */}
+        {/* <div className={styles.grid}><KeypadRaw/></div>  
+        <div className={styles.grid}><Keypad/></div>   */}
+        {/* <div className={styles.grid}><LinksRaw/></div>  
+        <div className={styles.grid}><Links/></div>   */}
+        {/* <div className={styles.grid}><ButtonRaw/></div>  
+        <div className={styles.grid}><Button/></div>   */}
+        {/* <div className={styles.grid}><SafeQuestionRaw/></div>
+        <div className={styles.grid}><SafeQuestion/></div> */}
+        {/* <div className={styles.grid}><TodoFunRaw/></div>  
+        <div className={styles.grid}><TodoFun/></div>   */}
+        {/* <div className={styles.grid}><TodoRaw/></div>  
+        <div className={styles.grid}><Todo/></div>   */}
+        {/* <div className={styles.grid}><TransitionRaw/></div> */}
+        <div className={styles.grid}><Transition/></div>  
+       
+        
+      </main>
 
       <footer className={styles.footer}>
         <a

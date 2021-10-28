@@ -67,7 +67,7 @@ export default function TodoFun(){
     return (
         <div>
             <main>
-                <div>
+                <div class="todofunBoard">
                     <h1>
                         TODO App with Next.js!
                         <br/>
@@ -80,33 +80,33 @@ export default function TodoFun(){
                             </div>
                             :
                             <form onSubmit={addTodo}>
-                                <input id="inputId" type="text"
+                                <input class="todofunNew-todo todofunInput" id="inputId" type="text"
                                        name="todo" onChange={changeHandler}
                                        placeholder="Enter your exciting TODO item!"/>
                             </form>
                     }
 
-                    <div className="left">
-                        <h2>todo</h2>
+                    <div className="todofunLeft">
+                        <h2 class="todofunh2">todo</h2>
                         {data.filter(t=>!t.done).map((todo)=>
                         <div>
-                        <input type="checkbox" checked={false} 
+                        <input class="todofunInput" type="checkbox" checked={false} 
                         onChange={e=>changeChecked(e, todo)} 
                         />
                         {todo.description}
-                        <button onClick={() => removeTodo(todo)}>x</button>
+                        <button class="todofunButton" onClick={() => removeTodo(todo)}>x</button>
                     </div>
                         )}
                     </div>
 
-                    <div className="right">
+                    <div className="todofunRight">
                         <h2>todo</h2>
                         {data.filter(t=>t.done).map((todo)=>
                         <div>
-                        <label input={{key:todo.id}}>
-                        <input type="checkbox" checked={true} onChange={e=>changeChecked(e, todo)} />
+                        <label class="todofunLabel" input={{key:todo.id}}>
+                        <input class="todofunInput" type="checkbox" checked={true} onChange={e=>changeChecked(e, todo)} />
                         {todo.description}
-                        <button onClick={() => removeTodo(todo)}>x</button>
+                        <button class="todofunButton" onClick={() => removeTodo(todo)}>xXX</button>
                         </label>
                          </div>
                         )}

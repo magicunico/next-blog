@@ -10,32 +10,7 @@ export default function ElizaBot(){
     const eliza = new Eliza();
     const [comments, setComments] = useState([{author: 'eliza', text: eliza.getInitial()}]);
     const [autoScroll,setAutoscroll] = useState(false);
-    // let autoscroll;
- 
-
-
-    // componentWillUpdate()
-    // {
-    //     let div=document.getElementById('scrollableDiv');
-    //     setAutoscroll(div && (div.offsetHeight + div.scrollTop) > (div.scrollHeight - 20));
-    // }
-
-    // componentDidUpdate(){
-    //     let div=document.getElementById('scrollableDiv');
-	// 	if (autoscroll) div.scrollTo(0, div.scrollHeight);
-	// }
-
-    // let commentsX = comments.concat(
-	// 	{  }
-    // );
-
-    // setComments(commentsX);
-   
-
-	
-
-
-    let handleKeyDownF=(event)=>{
+        let handleKeyDownF=(event)=>{
 
         let div=document.getElementById('scrollableDiv');
         setAutoscroll(div && (div.offsetHeight + div.scrollTop) > (div.scrollHeight - 20));
@@ -86,12 +61,12 @@ export default function ElizaBot(){
 
     return(
         <div>
-            <div class="chat" style={{maxHeight: '300px'}}>
+            <div class="elizaChat" style={{maxHeight: '300px'}}>
 	            <h1>Eliza</h1>
-	                <div class="scrollable" id="scrollableDiv">  
+	                <div class="elizaScrollable" id="scrollableDiv">  
                         {comments.map((comment)=>
                             <article class={comment.author}>
-                                <span>{comment.text}</span>
+                                <span class="elizaSpan">{comment.text}</span>
                             </article>
                         )}
                     </div>

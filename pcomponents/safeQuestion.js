@@ -16,8 +16,12 @@ export default function SafeQuestion(){
 
     let handleSumbit = (event) => {
         event.preventDefault();
-        let alertText = "Answered question"+selected+" with "+answer;
-        alert(alertText)
+        let alertText = "Answered question "+selected+" with "+answer;
+        if(selected){
+            alert(alertText)
+        }else{
+            alert("Please select the question")
+        }
 
     }
 
@@ -44,7 +48,7 @@ export default function SafeQuestion(){
             <form onSubmit={handleSumbit}>
 
 
-            <input id="answerInput" onChange={getAnswer}/>
+            <input class="safeQuestionInput"id="answerInput" onChange={getAnswer}/>
             <button disabled={!answer} type="submit">
 		        Submit  
 	        </button>
@@ -52,6 +56,7 @@ export default function SafeQuestion(){
 
         
             <select value={selected} onChange={(e)=>getSelected(e)}>
+                <option>...</option>
                 {questions.map((option, index) => 
                     <option key={index} 
                         value={option}>
