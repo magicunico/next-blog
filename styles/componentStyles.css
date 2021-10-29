@@ -3,9 +3,9 @@
 .alertButton {
     height: 4rem;
     width: 8rem;
-    background-color: #aaa;
-    border-color: #f1c40f;
-    color: #f1c40f;
+    background-color: rgb(28, 22, 83);
+    border-color: rgb(119, 166, 236);
+    color: rgb(255, 255, 255);
     font-size: 1.25rem;
     background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
     background-position: 100%;
@@ -58,7 +58,7 @@
 
 /* gallery */
 .galleryContainer {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,13 +66,14 @@
     height: 100%;
     top: 0;
     left: 0;
+    margin-top: 450px;
 }
 
 .galleryPhone {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 52vmin;
+    width: 100%;
     height: 76vmin;
     border: 2vmin solid #ccc;
     border-bottom-width: 10vmin;
@@ -85,13 +86,14 @@
     text-transform: uppercase;
     font-size: 5vmin;
     margin: 0.2em 0 0.5em 0;
+    text-align: center;
 }
 
 .galleryGrid {
     display: grid;
     flex: 1;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1.5fr);
     grid-gap: 2vmin;
 }
 
@@ -145,6 +147,8 @@
 /* keypad */
 
 .keypad {
+    width: 50%;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 5em);
     grid-template-rows: repeat(4, 3em);
@@ -158,7 +162,16 @@
 /* safeQuestion */
 .safeQuestionInput { display: block; width: 500px; max-width: 100%; }
 
+
+.safeQuestionDiv{
+    width: 50%;
+}
 /* todos fun */
+.todoDiv {
+    max-width: 36em;
+	position: relative;
+    margin: 300px 0;
+}
 
 .todofunNew-todo {
     font-size: 1.4em;
@@ -168,7 +181,9 @@
 
 .todofunBoard {
     max-width: 36em;
-    margin: 0 auto;
+    margin-top: 100px;
+	position: relative;
+
 }
 
 .todofunLeft, .todofunRight {
@@ -222,15 +237,73 @@
 
 /* transition */
 
+.transitionLabel{
+    position: relative;
+    padding-bottom: 2%;
+}
+
+
 .transitionCentered {
-    position: absolute;
+    padding-bottom: 5px;
+	margin-top: 100px;
+	position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
 
 .transitionDiv {
-    position: absolute;
+    position: relative;
     transform: translate(-50%,-50%);
     font-size: 4em;
 }
+
+.transitionDiv {
+    color: #f1c40f;
+}
+
+/* links */
+.linksAllDiv{
+    position: absolute;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.linksDiv{
+    align-items: center;
+}
+
+.linksButton{
+    width: 40%;
+    height: 45px;
+    color: darkblue;
+    background-color: rgb(139, 198, 247);	
+    border-color: white;
+}
+
+/* main */
+    .storyApp{
+    margin: auto;
+  }
+
+  .wholeWidth{
+    width: 100%;
+    margin-bottom: 1%;
+    position: relative;
+  }
+
+  .bottom{
+    position: absolute;
+    width: 100%;
+    display: flex;
+  }
+
+  .leftBottom{
+    width: 50%;
+    margin: 0;
+  }
+
+  .rightBottom{
+    width: 50%;
+    margin: 0;
+  }

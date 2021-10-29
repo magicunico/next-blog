@@ -17,41 +17,41 @@ export default function TodoFunRaw(){
                         <h2 class="todofunh2">todo</h2>
                         <div>
                             <input class="todofunInput" type="checkbox" checked={false}/>
-                            write some docs
+                            Create template project
                             <button class="todofunButton">x</button>
                         </div>
 
                         <div>
                             <input  class="todofunInput" type="checkbox" checked={false}/>
-                            start writing JSConf talk
+                            Think of the theme
                             <button class="todofunButton">x</button>
                         </div>
 
                         <div>
                             <input  class="todofunInput" type="checkbox" checked={false}/>
-                            mow the lawn
+                            Create first component
                             <button class="todofunButton">x</button>
                         </div>
                     
                         <div>
                             <input class="todofunInput" type="checkbox" checked={false}/>
-                            feed the turtle
+                            Create first page
                             <button class="todofunButton">x</button>
                         </div>
                     
                         <div>
                             <input  class="todofunInput" type="checkbox" checked={false}/>
-                            fix some bugs
+                            Create first app
                             <button class="todofunButton">x</button>
                         </div>
                     </div>
 
                     <div className="todofunRight">
-                        <h2 class="todofunh2">todo</h2>
+                        <h2 class="todofunh2">Done</h2>
                         <div>
                             <label class="todofunLabel">
                             <input  class="todofunInput" type="checkbox" checked={true}/>
-                            buy some milk
+                            Start the tutorial
                             <button class="todofunButton">x</button>
                             </label>
                         </div>

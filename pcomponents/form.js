@@ -8,11 +8,7 @@ export default function Form(){
 
     const handleSubmit = e =>{
         e.preventDefault();
-        const data  ={
-            name,
-            message,
-        };
-        console.log(data);
+        alert(name+" "+message+" lets start!")
     };
 
     return(
@@ -25,7 +21,7 @@ export default function Form(){
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <label htmlFor="name">Name: </label>
                     <input id="name" type="text" onChange={e=>setName(e.target.value)} />
-                    <label htmlFor="message">Message: </label>
+                    <label htmlFor="message">Last name: </label>
                     <input id="message" type="text" onChange={e=>setMessage(e.target.value)} />
                     <button type="submit">Send</button>
                 </form>

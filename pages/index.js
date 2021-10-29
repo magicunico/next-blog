@@ -34,74 +34,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <main className={styles.main}>
-        <div className={styles.grid}><Form /></div>  
-        <div className={styles.grid}><Todo/></div>  
-        <div className={styles.grid}><Button/></div>  
-        <div className={styles.grid}><Keypad/></div>  
-        <div className={styles.grid}><Transition/></div>  
-        <div className={styles.grid}><TodoFun/></div>  
-        <div className={styles.grid}><ElizaBot/></div>  
-        <div className={styles.grid}><Gallery/></div>  
-        <div className={styles.grid}><Links/></div>  
-        <div className={styles.grid}><SafeQuestion/></div>
-        <div className={styles.grid}><AlertButton/></div>
-      </main> */}
+      <main className="storyApp">
+        <div className="wholeWidth" ><Form /></div>  
+        <div className="wholeWidth" ><AlertButton/></div>
+        <div className="wholeWidth" ><Button/></div>  
+        <div className="wholeWidth" ><Todo/></div>  
+        <div className="wholeWidth" ><TodoFun/></div>  
+        <div className="wholeWidth" ><Links/></div>  
+        <div className="wholeWidth" ><Transition/></div>  
+        <div className="wholeWidth" ><Gallery/></div>  
+        <div className="wholeWidth" ><ElizaBot/></div>  
+        <div className="bottom">
+        <div className="bottomLeft" ><Keypad/></div>  
+        <div className="bottomRight" ><SafeQuestion/></div>
+        </div>
 
-      {/* <main className={styles.main}>
-        <div className={styles.grid}><FormRaw /></div>  
-        <div className={styles.grid}><TodoRaw/></div>  
-        <div className={styles.grid}><ButtonRaw/></div>  
-        <div className={styles.grid}><KeypadRaw/></div>  
-        <div className={styles.grid}><TransitionRaw/></div>  
-        <div className={styles.grid}><TodoFunRaw/></div>  
-        <div className={styles.grid}><ElizaBotRaw/></div>  
-        <div className={styles.grid}><GalleryRaw/></div>/  
-        <div className={styles.grid}><LinksRaw/></div>  
-        <div className={styles.grid}><SafeQuestionRaw/></div>
-        <div className={styles.grid}><AlertButtonRaw/></div>
-      </main> */}
-
-<main className={styles.main}>
-        
-        {/* <div className={styles.grid}><AlertButtonRaw/></div>
-        <div className={styles.grid}><AlertButton/></div> */}
-        {/* <div className={styles.grid}><ElizaBotRaw/></div> 
-        <div className={styles.grid}><ElizaBot/></div>   */}
-         {/* <div className={styles.grid}><FormRaw /></div>  
-        <div className={styles.grid}><Form /></div>   */}
-        {/* <div className={styles.grid}><GalleryRaw/></div>/  */}
-        {/* <div className={styles.grid}><Gallery/></div>/   */}
-        {/* <div className={styles.grid}><KeypadRaw/></div>  
-        <div className={styles.grid}><Keypad/></div>   */}
-        {/* <div className={styles.grid}><LinksRaw/></div>  
-        <div className={styles.grid}><Links/></div>   */}
-        {/* <div className={styles.grid}><ButtonRaw/></div>  
-        <div className={styles.grid}><Button/></div>   */}
-        {/* <div className={styles.grid}><SafeQuestionRaw/></div>
-        <div className={styles.grid}><SafeQuestion/></div> */}
-        {/* <div className={styles.grid}><TodoFunRaw/></div>  
-        <div className={styles.grid}><TodoFun/></div>   */}
-        {/* <div className={styles.grid}><TodoRaw/></div>  
-        <div className={styles.grid}><Todo/></div>   */}
-        {/* <div className={styles.grid}><TransitionRaw/></div> */}
-        <div className={styles.grid}><Transition/></div>  
        
-        
+        {/* 
+        <div className="wholeWidth" ><FormRaw /></div>  
+        <div className="wholeWidth" ><AlertButtonRaw/></div>
+        <div className="wholeWidth" ><ButtonRaw/></div>  
+        <div className="wholeWidth" ><TodoRaw/></div>  
+        <div className="wholeWidth" ><TodoFunRaw/></div>  
+        <div className="wholeWidth" ><LinksRaw/></div>  
+        <div className="wholeWidth" ><TransitionRaw/></div>  
+        <div className="wholeWidth" ><GalleryRaw/></div>  
+        <div className="wholeWidth" ><ElizaBotRaw/></div>  
+        <div className="wholeWidth" ><KeypadRaw/></div>  
+        <div className="wholeWidth" ><SafeQuestionRaw/></div> */}
+
       </main>
 
+     
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+
+        </footer>
     </div>
   )
 }

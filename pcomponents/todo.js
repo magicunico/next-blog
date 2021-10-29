@@ -2,7 +2,10 @@ import {useEffect, useState} from "react";
 
 
 export default function Todo(){
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([	
+         'Prepare your workspace' ,
+         'Make a coffee',
+         'Turn on your favourite music']);
     const [loading, setLoading] = useState(false);
     const [todo, setTodo] = useState("");
     let changeHandler = (event) => {
@@ -47,7 +50,7 @@ export default function Todo(){
     return (
         <div>
             <main>
-                <div>
+                <div class="todoDiv">
                     <h1>
                         TODO App with Next.js!
                         <br/>

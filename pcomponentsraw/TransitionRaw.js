@@ -2,7 +2,7 @@ export default function TransitionRaw(){
     return (
         <div>
             <div>
-                <label>
+                <label  class="transitionLabel">
 	                <input type="checkbox"/>Visibility
                 </label>
             </div>

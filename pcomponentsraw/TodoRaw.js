@@ -13,7 +13,13 @@ export default function TodoRaw(){
                         </form>
  
                         <div>
-                            Buy something
+                        Prepare your workspace' 
+                        </div>
+                        <div>
+                        Make a coffee'
+                        </div>
+                        <div>
+                        Turn on your favourite music
                         </div>
                 </div>
             </main>

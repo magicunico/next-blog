@@ -27,14 +27,14 @@ export default function Transition(){
     return (
         <div>
             <div>
-          <label>
-	        <input type="checkbox" onChange={changeVisibility}/>Visibility
+          <label  class="transitionLabel">
+	        <input type="checkbox" onChange={changeVisibility}/>Check it out
         </label>
         </div>
         <div>
         {visible? 
             <div class="transitionCentered">
-                <div class="transitionDiv" id="image">transitions!</div>
+                <div class="transitionDiv transitionDivColor" id="image">Check our gallery below!</div>
             </div>
             :
             <div class="transitionCentered">

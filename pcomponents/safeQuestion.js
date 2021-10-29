@@ -7,10 +7,9 @@ import { styles } from "ansi-colors";
 
 export default function SafeQuestion(){
     const [questions,setQuestions]=useState([
-       `Where did you go to school?`,
-       `What is your mother's name?`,
-        `What is another personal fact that an attacker could easily find with Google?` 
-    ]);
+         `Where did you go to school?`,
+         `What is your dream job?`,
+         `What is another app you want to build with using hydration`]);
       const [selected, setSelected] = useState("");
       const [answer, setAnswer] = useState("");
 
@@ -42,8 +41,8 @@ export default function SafeQuestion(){
     }
 
     return(
-        <div>
-            <h2>Insecurity questions</h2>
+        <div class="SafeQuestionDiv">
+            <h2>Questions</h2>
 
             <form onSubmit={handleSumbit}>
 

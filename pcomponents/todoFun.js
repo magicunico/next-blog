@@ -3,12 +3,12 @@ import {useEffect, useState} from "react";
 
 export default function TodoFun(){
     var todos = [
-		{ id: 1, done: false, description: 'write some docs' },
-		{ id: 2, done: false, description: 'start writing JSConf talk' },
-		{ id: 3, done: true, description: 'buy some milk' },
-		{ id: 4, done: false, description: 'mow the lawn' },
-		{ id: 5, done: false, description: 'feed the turtle' },
-		{ id: 6, done: false, description: 'fix some bugs' },
+		{ id: 1, done: true, description: 'Start the tutorial' },
+		{ id: 2, done: false, description: 'Create template project' },
+		{ id: 3, done: false, description: 'Think of the theme' },
+		{ id: 4, done: false, description: 'Create first component' },
+		{ id: 5, done: false, description: 'Create first page' },
+		{ id: 6, done: false, description: 'Create first app' },
 	];
     const [data, setData] = useState(todos);
     const [loading, setLoading] = useState(false);

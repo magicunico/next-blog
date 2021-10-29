@@ -13,13 +13,15 @@ export default function SafeQuestionRaw(){
 
             <select>
                     <option>
-                        Where did you go to school?
+                 Where did you go to school?
+         
                     </option>
                     <option>
-                        What is your mother's name?
+                    What is your dream job?
+         
                     </option>
                     <option>
-                        What is another personal fact that an attacker could easily find with Google?
+                    What is another app you want to build with using hydration?
                     </option>
             </select>
 

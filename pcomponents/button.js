@@ -9,7 +9,7 @@ export default function Button(){
         console.log(count);
         var newCount = count+1;
         if(count>=10){
-            alert('Count is dangerously high!');
+            alert('Okay!');
             setCount(9)
         }else{
             setCount(newCount);
@@ -19,7 +19,7 @@ export default function Button(){
  
     return (
         <div>
-            <button onClick={addOne}> Cliked {count} {count===1 ? 'time' : 'times'} </button>
+            <button onClick={addOne}> On scale on 1-10 how ready are you? : {count} {count <8 ? '..not enough' : '..close'} </button>
         </div>
     )
 }

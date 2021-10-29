@@ -7,7 +7,7 @@ export default function FormRaw(){
                 <form className={styles.form}>
                     <label htmlFor="name">Name: </label>
                     <input id="name" type="text" />
-                    <label htmlFor="message">Message: </label>
+                    <label htmlFor="message">Last name: </label>
                     <input id="message" type="text" />
                     <button type="submit">Send</button>
                 </form>
